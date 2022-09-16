@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {Animated, Text, View, FlatList, RefreshControl, NativeSyntheticEvent, NativeScrollEvent} from 'react-native';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'; 
 import Card from '../../components/Card';
 import Gap from '../../components/Gap';
 import LoadingRect from '../../components/SkletonLoading/LoadingRect';
@@ -17,6 +18,7 @@ type product = {
 }
 
 const HomeScreen = () => {
+  const { top } = useSafeAreaInsets();
   const [products, setProducts] = useState<Array<product>>([]);
   const [refreshing, setRefreshing] = useState(false);
   const [loading, setLoading] = useState<boolean>(true);
@@ -118,6 +120,7 @@ const HomeScreen = () => {
           onMomentumScrollEnd={onFlatListScrollEnd}
         />
       </View>
+      <SafeAreaView style={[styles.safeArea, { marginBottom: -top }]} />
     </>
   )
 }
