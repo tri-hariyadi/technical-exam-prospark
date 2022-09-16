@@ -61,7 +61,7 @@ const HomeScreen = () => {
 
   return (
     <>
-      <StatusBarApp backgroundColor='#3F4EF3' />
+      <StatusBarApp backgroundColor='#3F4EF3' barStyle='light-content' />
       <View style={styles.header}><Text style={styles.textHeader}>Products</Text></View>
       <Animated.View style={[styles.swipeWarn,
         {
