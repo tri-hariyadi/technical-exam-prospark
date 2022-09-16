@@ -14,8 +14,7 @@ git clone https://github.com/tri-hariyadi/technical-exam-prospark.git
 
 ## Download Android apk
 For demo you can download apk for android device and install it.<br/>
-<a data-permalink-href="/tri-hariyadi/technical-exam-prospark/raw/2f5f7132180d5c8c68568b354be90e46f29fd23e/ss/app-release.apk" href="/tri-hariyadi/technical-exam-prospark/raw/master/ss/app-release.apk" id="raw-url" data-view-component="true" class="js-permalink-replaceable-link btn-sm btn BtnGroup-item">Download Android apk
-</a>
+<a id="raw-url" href="https://github.com/tri-hariyadi/technical-exam-prospark/blob/master/ss/app-release.apk" download>Download Android apk</a>
 
 ## Screen Shot
 - Splash Screen<br/><br/>
