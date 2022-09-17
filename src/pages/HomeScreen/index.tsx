@@ -31,10 +31,10 @@ const HomeScreen = () => {
       const data = await resp.json();
       if (data.constructor === Array) setProducts(data);
       else setErrorMsg('Data products is empty');
-      setLoading(false);
     } catch (error) {
       setErrorMsg('Ooops, something went wrong');
     }
+    setLoading(false);
   };
 
   const onRefresh = useCallback(async () => {
